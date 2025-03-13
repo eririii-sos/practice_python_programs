@@ -7,5 +7,8 @@ while True:
         user_input = int(input("Enter a number: ")) # Get user input
         total_sum += user_input # Add to the total sum
         count += 1 # Increment the count
+    except ValueError: # Error handling for invalid input
+        print("Invalid input! Terminating the program.")
+        break
     
 # Calculate and display the average if numbers were entered

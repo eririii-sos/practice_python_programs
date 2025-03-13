@@ -13,4 +13,5 @@ while True:
     if user_input in input_numbers:
         print("Duplicate")
     else:
-        print("Unique") # If not a duplicate, add the new/unique number to the list  
+        print("Unique") # If not a duplicate, display as "Unique"  
+        input_numbers.append(user_input) # Adds the new input to the list

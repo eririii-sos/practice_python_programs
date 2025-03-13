@@ -7,6 +7,9 @@ while True:
 
         if highest_number is None or user_input > highest_number: # Update the highest number every input
             highest_number = user_input
+    
+    except ValueError: # Error handling for invalid input
+        print("Invalid input! Terminating the program.")
+        break
 
-# Error handling for invalid input
 # Display highest number input

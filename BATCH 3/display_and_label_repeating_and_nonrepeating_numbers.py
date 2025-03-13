@@ -5,7 +5,9 @@ input_numbers = []
 while True:
     try:
         user_input = int(input("Enter a number: "))
-
-# Error handling for invalid input
+    except ValueError: # Error handling for invalid input
+        print("Invalid input! Terminating the program.")
+        break
+    
 # Check if input is new or a duplicate
 # If not a duplicate, add the new/unique number to the list  

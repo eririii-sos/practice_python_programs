@@ -2,15 +2,15 @@
 print("Enter 10 numbers:")
 
 # Empty list to store the 10 number input
-numbers = [] 
+number_set = [] 
 
 # Collect user input then insert them inside empty list
 for i in range(1, 11):
-    num = int(input(f"{i}: "))
-    numbers.append(num)
+    number_input = int(input(f"{i}: "))
+    number_set.append(number_input)
 
-# Identifying odd numbers
+# Determine odd numbers
 print("Odd numbers:")
-for num in numbers:
-    if num % 2 != 0:  # Check if the number is odd
-        print(num)
+for number_input in number_set:
+    if number_input % 2 != 0:  # Check if the number is odd
+        print(number_input)

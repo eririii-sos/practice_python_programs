@@ -11,5 +11,7 @@ for i in range(1,11):
             all_numbers = int(input(f"{i}: "))
             number_set.append(all_numbers)
             break
-        
+        except ValueError: # Error handling for invalid input
+            print("Invalid input! Plese enter a valid number.")
+
 # Display all the numbers 

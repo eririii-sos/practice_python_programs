@@ -14,3 +14,5 @@ while True:
         break
 
 # Display lowest number input
+if lowest_number is not None:
+    print(f"The lowest number entered was: {lowest_number}")

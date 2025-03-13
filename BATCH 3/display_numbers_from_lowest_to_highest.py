@@ -11,4 +11,7 @@ while True:
         break
 
 # Sort the list of numbers in ascending order
+number_set.sort()
+
 # Display the numbers in ascending order
+print(f"Numbers from lowest to highest: {number_set}")

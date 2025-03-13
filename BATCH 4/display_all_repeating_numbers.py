@@ -19,3 +19,7 @@ for number_set in all_input:
         duplicate_numbers.append(number_set)
 
 # Display output
+if duplicate_numbers:
+    print(f"Numbers with duplicates: {duplicate_numbers}")
+else:
+    print("No duplicates found.")

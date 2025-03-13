@@ -11,6 +11,6 @@ for i in range(10):
             break
         except ValueError: # Error handling for invalid input
             print("Invalid input! Please enter a valid number.")
-       
+        
 # Determine duplicates
 # Display output

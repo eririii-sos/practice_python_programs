@@ -12,9 +12,11 @@ while True:
 
 # Find number with the most duplicates
 if number_set:
-    most_repeating_number = max(set(number_set), key=number_set.count)
-    count = number_set.count(most_repeating_number)
-    print(f"The number with the most duplicates is {most_repeating_number} (appears {count} times).") # Display number with the most duplicates
+
+    number_count = {user_input: number_set.count(user_input) for user_input in set(number_set)} # Counting frequencies of all numbers
+    max_count = max(number_count.values()) # Find highest count of duplicates
+    most_repeating_number = [user_input for user_input, count in number_count.items() if count == max_count] # Find all numbers that have highest number of duplicates
+    print(f"The number(s) with the most duplicates is/are {most_repeating_number} (appears {max_count} times).") # Display number(s) with the most duplicates
 
 else:
     print("No valid numbers were entered.") # In case where no numbers were entered

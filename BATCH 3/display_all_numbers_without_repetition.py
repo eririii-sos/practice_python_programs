@@ -1,4 +1,4 @@
-# Store input inside set to automatically handle duplicates
+# Store input inside empty set to automatically handle duplicates
 all_input = set()  
 
 # User input
@@ -13,5 +13,6 @@ for i in range(10):
         # Restriction so user only types numbers
         except ValueError:
             print("Invalid input! Please enter a number.")
-
+            
 # Display output
+print(f"Numbers entered: {all_input}")

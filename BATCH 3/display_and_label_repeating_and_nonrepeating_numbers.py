@@ -10,4 +10,7 @@ while True:
         break
     
 # Check if input is new or a duplicate
-# If not a duplicate, add the new/unique number to the list  
+    if user_input in input_numbers:
+        print("Duplicate")
+    else:
+        print("Unique") # If not a duplicate, add the new/unique number to the list  

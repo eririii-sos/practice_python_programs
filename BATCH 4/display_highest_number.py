@@ -13,3 +13,5 @@ while True:
         break
 
 # Display highest number input
+if highest_number is not None:
+    print(f"The highest number entered was: {highest_number}")

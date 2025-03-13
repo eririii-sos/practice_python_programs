@@ -14,3 +14,4 @@ while True:
 number_set.sort(reverse=True)
 
 # Display the numbers in descending order
+print(f"Numbers from highest to lowest: {number_set}")

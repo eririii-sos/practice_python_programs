@@ -13,4 +13,9 @@ for i in range(10):
             print("Invalid input! Please enter a valid number.")
         
 # Determine duplicates
+duplicate_numbers = []
+for number_set in all_input:
+    if all_input.count(number_set) > 1 and number_set not in duplicate_numbers:
+        duplicate_numbers.append(number_set)
+
 # Display output

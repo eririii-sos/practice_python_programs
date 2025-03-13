@@ -1,8 +1,10 @@
 # User Input
-first_number = input("Enter First number: ")
-second_number = input("Enter Second Number: ")
+first_number = int(input("Enter First number: "))
+second_number = int(input("Enter Second Number: "))
 
-# Get the bigger number
+# Store the two number input
 numbers = (first_number, second_number)
-bigger = max(numbers)
-print(f"The bigger number is {bigger}")
+bigger_number = max(numbers) # Determines the bigger number
+
+# Display bigger number
+print(f"The bigger number is {bigger_number}")

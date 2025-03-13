@@ -1,16 +1,18 @@
 # Ask user for 10 numbers
 print("Enter 10 numbers")
-n1 = int(input("1: "))
-n2 = int(input("2: "))
-n3 = int(input("3: "))
-n4 = int(input("4: "))
-n5 = int(input("5: "))
-n6 = int(input("6: "))
-n7 = int(input("7: "))
-n8 = int(input("8: "))
-n9 = int(input("9: "))
-n10 = int(input("10: "))
+number_1 = int(input("1: "))
+number_2 = int(input("2: "))
+number_3 = int(input("3: "))
+number_4 = int(input("4: "))
+number_5 = int(input("5: "))
+number_6 = int(input("6: "))
+number_7 = int(input("7: "))
+number_8 = int(input("8: "))
+number_9 = int(input("9: "))
+number_10 = int(input("10: "))
 
 # Get summation of given numbers
-total_sum = n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8 + n9 + n10
+total_sum = number_1 + number_2 + number_3 + number_4 + number_5 + number_6 + number_7 + number_8 + number_9 + number_10
+
+# Display sum
 print(f"Sum = {total_sum}")

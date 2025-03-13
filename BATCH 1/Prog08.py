@@ -1,7 +1,10 @@
-# Collecting user input for 10 numbers
+# Display what is being asked from the user
 print("Enter 10 numbers:")
+
+# Empty list to store the 10 number input
 numbers = [] 
 
+# Collect user input then insert them inside empty list
 for i in range(1, 11):
     num = int(input(f"{i}: "))
     numbers.append(num)

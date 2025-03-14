@@ -1,17 +1,17 @@
 # Initialized empty list to store input
-x = []
+mid_numbers = []
 
 # Get user input
 first_number = int(input("Enter First number: "))
 second_number = int(input("Enter Second Number: "))
 
 # Find numbers in between given numbers
-if n1 < n2:
-    for num in range(n1 + 1, n2):
-        x.append(num)
+if first_number < second_number:
+    for number in range(first_number + 1, second_number):
+        mid_numbers.append(number)
+    print(f"The number(s) in between {first_number} and {second_number} is/are: {mid_numbers}.")
 
 else:
-    for num in range(n2 + 1, n1):
-        x.append(num)
-
-print(x)
+    for number in range(second_number + 1, first_number):
+        mid_numbers.append(number)
+    print(f"The number(s) in between {second_number} and {first_number} is/are: {mid_numbers}.")

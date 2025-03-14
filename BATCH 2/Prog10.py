@@ -1,12 +1,11 @@
-# Create a program that ask user to input 2 numbers. Print all the numbers between the two numbers.
-# User Input
-n1 = int(input("Enter First number: "))
-n2 = int(input("Enter Second Number: "))
-
-# 
+# Initialized empty list to store input
 x = []
 
-# 
+# Get user input
+first_number = int(input("Enter First number: "))
+second_number = int(input("Enter Second Number: "))
+
+# Find numbers in between given numbers
 if n1 < n2:
     for num in range(n1 + 1, n2):
         x.append(num)

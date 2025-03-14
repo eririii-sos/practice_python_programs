@@ -10,3 +10,6 @@ try:
 
     except ZeroDivisionError: # Division by zero handling
         print("Error: Division by zero is not allowed. Terminating the program.")
+
+except ValueError:
+    print("Invalid input! Please enter a valid number.")

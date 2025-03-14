@@ -2,10 +2,12 @@
 print("Enter 10 numbers:")
 numbers = [int(input(f"{i + 1}: ")) for i in range(10)] # List for collecting all inputs
 
-# Perform the subtraction (first number minus all of the remaining numbers)
-first_number = numbers[0]
+# Start with the first number
+difference = numbers[0]
 
-print(f"Difference of {first_number} and the remaining numbers:")
+# Perform subtraction of numbers
+print(f"\nSubtracting the numbers:")
 for num in numbers[1:]:
-    result = first_number - num
-    print(f"{first_number} - {num} = {result}")
+    print(f"{result} - {num} = ", end="")
+    difference -= num # Subtract current number from result
+    print(difference) # Display result after every subtraction

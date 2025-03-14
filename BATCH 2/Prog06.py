@@ -8,6 +8,6 @@ difference = numbers[0]
 # Perform subtraction of numbers
 print(f"\nSubtracting the numbers:")
 for num in numbers[1:]:
-    print(f"{result} - {num} = ", end="")
+    print(f"{difference} - {num} = ", end="")
     difference -= num # Subtract current number from result
     print(difference) # Display result after every subtraction

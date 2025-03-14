@@ -1,10 +1,6 @@
 # Collecting user input for 10 numbers
 print("Enter 10 numbers:")
-numbers = [] 
-
-for i in range(1, 11):
-    num = int(input(f"{i}: "))
-    numbers.append(num)
+numbers = [int(input(f"{i + 1}: ")) for i in range(10)] # List for collecting all inputs
 
 # Perform the subtraction (first number minus all of the remaining numbers)
 first_number = numbers[0]
